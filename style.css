@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #f8f0df;
+    color: #4b2618;
+    overflow-x: hidden;
+}
+
+/* ---------- COVER ---------- */
+
+.cover {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    background:
+        radial-gradient(circle at top, #fff8e8, #ead1a1);
+}
+
+.cover::before,
+.cover::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border: 2px solid #b8863b;
+    opacity: 0.45;
+}
+
+.cover::before {
+    top: 20px;
+    left: 20px;
+    border-right: none;
+    border-bottom: none;
+}
+
+.cover::after {
+    bottom: 20px;
+    right: 20px;
+    border-left: none;
+    border-top: none;
+}
+
+.cover-content {
+    max-width: 850px;
+    width: 100%;
+    padding: 30px;
+}
+
+.blessing,
+.small-heading {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 13px;
+    color: #95651d;
+}
+
+.ganesha,
+.traditional-symbol {
+    font-size: 48px;
+    color: #9d2d20;
+    margin: 18px 0;
+}
+
+.cover h1 {
+    font-size: clamp(42px, 8vw, 78px);
+    font-weight: normal;
+    color: #722519;
+    margin: 10px 0;
+}
+
+.intro {
+    font-size: 19px;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+/* ---------- COUPLE PHOTO ---------- */
+
+.couple {
+    width: min(390px, 90%);
+    height: 430px;
+    margin: 25px auto;
+    border: 8px solid #fffaf0;
+    outline: 2px solid #b8863b;
+    box-shadow: 0 15px 35px rgba(70, 40, 20, 0.25);
+    overflow: hidden;
+    background: #ead8b8;
+}
+
+.couple img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.cover h2 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #7b291d;
+}
+
+.wedding-date {
+    margin: 12px 0 25px;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+/* ---------- BUTTON ---------- */
+
+button {
+    border: 1px solid #9b6b24;
+    background: #8d2d20;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #682016;
+    transform: translateY(-2px);
+}
+
+/* ---------- DECORATION ---------- */
+
+.decor {
+    color: #54734c;
+    letter-spacing: 8px;
+    font-size: 20px;
+}
+
+.top-decor {
+    position: absolute;
+    top: 18px;
+    left: 0;
+    width: 100%;
+}
+
+.bottom-decor {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+}
+
+/* ---------- INVITATION ---------- */
+
+.invitation {
+    min-height: 100vh;
+    text-align: center;
+    padding: 90px 20px 40px;
+    background:
+        linear-gradient(rgba(255, 250, 239, 0.94),
+        rgba(255, 250, 239, 0.94)),
+        radial-gradient(circle, #ead4a7, #fffaf0);
+}
+
+.hidden {
+    display: none;
+}
+
+.invitation > h1 {
+    color: #76271c;
+    font-size: clamp(35px, 7vw, 58px);
+    font-weight: normal;
+    margin: 12px 0 25px;
+}
+
+.message {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.9;
+    font-size: 18px;
+}
+
+/* ---------- COUPLE ---------- */
+
+.couple-section {
+    margin: 80px auto;
+}
+
+.couple-section h2,
+.events h2,
+.venue h2 {
+    color: #76271c;
+    font-size: 34px;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+.names {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    font-size: 28px;
+    color: #70401f;
+}
+
+.heart {
+    color: #a52c25;
+    font-size: 40px;
+}
+
+/* ---------- EVENTS ---------- */
+
+.events {
+    max-width: 1000px;
+    margin: 80px auto;
+}
+
+.event-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.event-card {
+    padding: 35px 20px;
+    background: rgba(255, 255, 255, 0.65);
+    border: 1px solid #c7a66b;
+    box-shadow: 0 8px 20px rgba(80, 50, 20, 0.08);
+}
+
+.event-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.event-card h3 {
+    color: #7b291d;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.event-card p {
+    margin: 8px;
+}
+
+/* ---------- VENUE ---------- */
+
+.venue {
+    max-width: 700px;
+    margin: 90px auto;
+    padding: 50px 25px;
+    border-top: 1px solid #b8863b;
+    border-bottom: 1px solid #b8863b;
+}
+
+.venue p {
+    font-size: 19px;
+    margin: 12px;
+}
+
+/* ---------- FINAL ---------- */
+
+.thank-you {
+    max-width: 750px;
+    margin: 100px auto 60px;
+}
+
+.flower {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.thank-you h1 {
+    color: #76271c;
+    font-size: clamp(34px, 6vw, 55px);
+    font-weight: normal;
+    line-height: 1.3;
+}
+
+.thank-you p {
+    margin: 25px auto;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    padding: 30px;
+    background: #54271c;
+    color: #f9ead0;
+    line-height: 2;
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 700px) {
+
+    .cover-content {
+        padding: 20px 10px;
+    }
+
+    .couple {
+        height: 380px;
+    }
+
+    .event-container {
+        grid-template-columns: 1fr;
+    }
+
+    .names {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .heart {
+        font-size: 32px;
+    }
+
+    .invitation {
+        padding-top: 60px;
+    }
+}
